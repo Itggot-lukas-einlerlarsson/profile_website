@@ -4,7 +4,13 @@ body {
     margin: 0;
     padding: 0;
     color: #6c2ba1;
-    background-color: #030000;
+    background: #000000;
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(26, 226, 53, 0.2) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(228, 191, 27, 0.18) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(195, 30, 228, 0.15) 1px, transparent 0);
+    background-size: 20px 20px, 30px 30px, 25px 25px;
+    background-position: 0 0, 10px 10px, 15px 5px;
 }
 
 /* Header and Footer Gradient Animation */
@@ -29,24 +35,26 @@ header, footer {
 }
 
 header {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 header h1 {
     margin: 0;
     font-size: 4rem;
+    color: #ffffff;
 }
 
 header h2 {
     margin: 0;
     font-size: 4rem;
-    color: aliceblue;
+    color: #ffffff;
 }
 
 
 header p {
     margin: 0.5rem 0 0;
     font-size: 1.5rem;
+    color: #ffffff;
 }
 
 main {
@@ -61,4 +69,21 @@ section {
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1
+}
+
+
+/* Toggle menu visibility with checkbox */
+#menu-toggle:checked ~ #menu {
+    display: block;
+}
+
+/* Hide menu by default on mobile */
+@media (max-width: 767px) {
+    #menu {
+        display: none;
+    }
+}
+
+#menu {
+    transition: all 0.3s ease;
 }
