@@ -13,6 +13,14 @@ body {
     background-position: 0 0, 10px 10px, 15px 5px;
 }
 
+.thoughts-bg {
+    background: radial-gradient(circle at center,
+        rgba(107, 70, 193, 0.3) 0%,
+        rgba(45, 45, 45, 0.8) 50%,
+        rgba(20, 20, 20, 0.9) 100%);
+    min-height: 100vh;
+}
+
 /* Header and Footer Gradient Animation */
 header, footer {
     background: linear-gradient(-45deg, #6c757d, #9b59b6, #6c757d, #9b59b6);
